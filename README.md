@@ -47,7 +47,7 @@ Shriyanshi: <!DOCTYPE html>
 </body>
 
 </html>
-[15/06, 10:14 AM] Shivanshi: * {
+Shriyanshi: * {
     box-sizing: border-box;
     font-family: Helvetica;
 }
