@@ -1,4 +1,4 @@
-[15/06, 10:14 AM]Shriyanshi: <!DOCTYPE html>
+Shriyanshi: <!DOCTYPE html>
 <html lang="en">
 
 <head>
