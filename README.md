@@ -1,37 +1,239 @@
-## Welcome to GitHub Pages
+[15/06, 10:14 AM] Shivanshi: <!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/ShriyanshiSharma/Coursera-Innovation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment Solution for Module 2</title>
+    <link rel="stylesheet" href="css.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    <h1>
+        Our Menu
+    </h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <section class="chicken">
+                <h2>Chicken</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eveniet alias suscipit provident?
+                    Voluptatem esse, repellat eveniet commodi reprehenderit ipsum optio sunt iste nobis ratione? Nemo
+                    quasi velit vel eum.
+                </p>
+            </section>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <section class="beef">
+                <h2>Beef</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eveniet alias suscipit provident?
+                    Voluptatem esse, repellat eveniet commodi reprehenderit ipsum optio sunt iste nobis ratione? Nemo
+                    quasi velit vel eum.
+                </p>
+            </section>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <section class="sushi">
+                <h2>Sushi</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eveniet alias suscipit provident?
+                    Voluptatem esse, repellat eveniet commodi reprehenderit ipsum optio sunt iste nobis ratione? Nemo
+                    quasi velit vel eum.
+                </p>
+            </section>
+        </div>
+    </div>
+</body>
 
-### Markdown
+</html>
+[15/06, 10:14 AM] Shivanshi: * {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+body {
+    background-color: #d6d6d6;
+}
 
-```markdown
-Syntax highlighted code block
+h1 {
+    text-align: center;
+    color: black;
+}
 
-# Header 1
-## Header 2
-### Header 3
+section {
+    border: 1px solid black;
+    background-color: grey;
+    margin: 10px;
+}
 
-- Bulleted
-- List
+section>h2 {
+    float: right;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0;
+    width: 230px;
+    text-align: center;
+    font-style: Times;
+    font-size: 24px;
+    font-weight: bold;
+    height: 45px;
+    padding-top: 10px;
+}
 
-1. Numbered
-2. List
+section.chicken>h2 {
+    background-color: #d675a5;
+}
 
-**Bold** and _Italic_ and `Code` text
+section.beef>h2 {
+    background-color: #e71616;
+    color: white;
+}
 
-[Link](url) and ![Image](src)
-```
+section.sushi>h2 {
+   
+    background-color: #e7f33d;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+section>p {
+    padding: 40px 15px 15px 15px;
+}
 
-### Jekyll Themes
+.row {
+    width: 100%;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ShriyanshiSharma/Coursera-Innovation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+/* Desktop view options */
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+
+/* Tablet view options */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+/* Mobile view options */
+
+@media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 74.99%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
